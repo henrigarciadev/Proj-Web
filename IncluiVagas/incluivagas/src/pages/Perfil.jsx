@@ -91,13 +91,13 @@ export default function Perfil() {
 
           {/* MENU ITEM 1 — Informações Pessoais */}
           <button className="perfil-menu-item" onClick={() => navigate('/dados-pessoais')}>
-            <span className="perfil-menu-label">👤 Informações Pessoais</span>
+            <span className="perfil-menu-label">Informações Pessoais</span>
             <span className="perfil-menu-arrow">❯</span>
           </button>
 
           {/* MENU ITEM 2 — Meu Currículo */}
           <button className="perfil-menu-item" onClick={() => navigate('/meu-curriculo')}>
-            <span className="perfil-menu-label">🎓 Meu Currículo</span>
+            <span className="perfil-menu-label">Meu Currículo</span>
             <span className="perfil-menu-arrow">❯</span>
           </button>
 

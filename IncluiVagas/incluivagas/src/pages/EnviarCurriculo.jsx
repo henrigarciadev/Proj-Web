@@ -158,7 +158,7 @@ export default function EnviarCurriculo() {
               onClick={handleEnviar}
               disabled={enviando}
             >
-              {enviando ? 'Enviando...' : '📄 ENVIAR CURRÍCULO'}
+              {enviando ? 'Enviando...' : ' ENVIAR CURRÍCULO'}
             </button>
             <button
               type="button"

@@ -22,13 +22,13 @@ export default function HeaderLogado({ titulo = "IncluiVagas", voltarPara }) {
 
       <div className="hl-center">
         <div className="hl-search-bar">
-          <span className="hl-search-icon">🔍</span>
+          <span className="hl-search-icon"></span>
           <span className="hl-search-placeholder">Pesquisar</span>
         </div>
       </div>
 
       <div className="hl-right">
-        <Link to="/perfil" className="hl-icon-btn" title="Meu currículo">📄</Link>
+        <Link to="/perfil" className="hl-icon-btn" title="Meu currículo"></Link>
         <button className="hl-icon-btn" title="Menu">⋮</button>
         <Link to="/perfil" className="hl-avatar" title="Meu perfil">
           <span className="hl-avatar-initials">?</span>
