@@ -1,0 +1,230 @@
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.enviar-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4ed3e5 0%, #082042 50%, #030a16 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.enviar-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  padding: 16px 10px 8px;
+}
+
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 0.2s;
+}
+.btn-voltar:hover { opacity: 0.8; }
+
+.enviar-loading {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.enviar-card {
+  background-color: #0b315e;
+  width: 100%;
+  max-width: 640px;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  margin: 0 16px 40px;
+  animation: aparecer 0.5s ease;
+}
+
+.enviar-empresa-nome {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.enviar-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0 20px 0;
+}
+
+.enviar-secao-titulo {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* User preview row */
+.enviar-user-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.enviar-avatar-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #082042;
+  border: 2px solid #4ed3e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.enviar-avatar-initials {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4ed3e5;
+}
+
+.enviar-user-nome {
+  margin: 0 0 3px 0;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.enviar-user-sub {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Field groups */
+.enviar-field-group {
+  margin-bottom: 18px;
+}
+
+.enviar-field-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #4ed3e5;
+  margin-bottom: 8px;
+}
+
+/* Tags */
+.enviar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.enviar-tag {
+  background-color: rgba(78, 211, 229, 0.15);
+  border: 1px solid rgba(78, 211, 229, 0.35);
+  color: #4ed3e5;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.enviar-tag-empty {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
+.enviar-sobre-texto {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Textarea for message */
+.enviar-textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.enviar-textarea:focus {
+  border-color: #4ed3e5;
+  box-shadow: 0 0 0 3px rgba(78, 211, 229, 0.2);
+}
+.enviar-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Action buttons */
+.enviar-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-enviar-curriculo {
+  width: 100%;
+  background-color: #11b9c8;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.btn-enviar-curriculo:hover:not(:disabled) {
+  background-color: #0ea8b6;
+  transform: translateY(-1px);
+}
+.btn-enviar-curriculo:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancelar-envio {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  padding: 4px;
+}
+.btn-cancelar-envio:hover { opacity: 0.8; }
+
+@media (max-width: 600px) {
+  .enviar-card { padding: 24px 16px; margin: 0 12px 32px; }
+}

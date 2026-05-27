@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #57d6e7 0%,
+        #0d5bbf 55%,
+        #02152d 100%
+    );
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar h1 {
+    color: #0b4c8c;
+    font-size: 42px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+}
+
+.navbar li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar li:hover {
+    color: #17c4d4;
+}
+
+.login-nav {
+    background-color: #27c7d8;
+    color: white;
+
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.login-box {
+    width: 420px;
+
+    margin: 100px auto;
+
+    background-color: #0a4a87;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    animation: aparecer 0.8s ease;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.user-icon {
+    width: 120px;
+    height: 120px;
+
+    margin: -100px auto 20px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+
+    height: 45px;
+
+    border: none;
+    border-radius: 8px;
+
+    padding-left: 15px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.login-box input:focus {
+
+    outline: none;
+
+    border: 2px solid #33d6ff;
+
+    box-shadow: 0 0 10px rgba(51,214,255,0.5);
+}
+
+.options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+button {
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #11b9c8;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.03);
+
+    background-color: #0fd7ea;
+}
+
+.login-box p {
+
+    color: white;
+
+    text-align: center;
+}
+
+.login-box span {
+
+    color: #63eaff;
+
+    cursor: pointer;
+}
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}

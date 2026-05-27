@@ -1,0 +1,163 @@
+/* Container Geral da Página */
+.main-page-wrapper {
+  min-height: calc(100vh - 70px); /* Desconta a altura estimada do Header */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gradiente de fundo idêntico ao do projeto */
+.theme-gradient {
+  background: linear-gradient(135deg, #4ed3e5 0%, #082042 50%, #030a16 100%);
+}
+
+/* Efeitos das ondas fluidas no fundo */
+.bg-shape-top {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(78, 211, 229, 0.2) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.bg-shape-bottom {
+  position: absolute;
+  bottom: -150px;
+  right: -50px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(8, 32, 66, 0.6) 0%, transparent 80%);
+  z-index: 1;
+}
+
+/* Layout em Grid/Dois lados */
+.hero-grid-layout {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Lado do Texto */
+.hero-text-side {
+  flex: 1;
+  color: #ffffff;
+}
+
+.hero-main-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.brand-light-text {
+  color: #ffffff;
+}
+
+.hero-decor-line {
+  width: 280px;
+  border: none;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.hero-subtitle-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 45px 0;
+  text-transform: uppercase;
+}
+
+/* Botão Saiba Mais (Padrão Arredondado Branco) */
+.saiba-mais-btn {
+  background-color: #ffffff;
+  color: #030a16;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 15px 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #4ed3e5;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 211, 229, 0.4);
+}
+
+/* Lado da Imagem */
+.hero-image-side {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-display-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px; /* Cantos levemente retos como na sua foto */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Caixa Indicadora (Em branco com marcação) */
+.image-empty-placeholder {
+  width: 100%;
+  max-width: 550px;
+  height: 320px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  background-color: rgba(3, 10, 22, 0.3);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-empty-placeholder span {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Responsividade Básica para telas de celular/tablet */
+@media (max-width: 900px) {
+  .hero-grid-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-decor-line {
+    margin: 0 auto 20px auto;
+  }
+  .hero-image-side {
+    width: 100%;
+  }
+  .image-empty-placeholder {
+    height: 240px;
+  }
+}

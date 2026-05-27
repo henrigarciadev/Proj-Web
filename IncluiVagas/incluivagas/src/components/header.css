@@ -1,0 +1,86 @@
+.main-header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.header-logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0d47a1; /* Azul escuro da logo */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-u {
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  margin-right: -1px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+.btn-login-header {
+  background-color: #00bcd4; /* Ciano do botão */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 25px;
+  border-radius: 20px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-login-header:hover {
+  background-color: #00acc1;
+  transform: translateY(-1px);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .header-nav {
+    gap: 15px;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
+  .btn-login-header {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}

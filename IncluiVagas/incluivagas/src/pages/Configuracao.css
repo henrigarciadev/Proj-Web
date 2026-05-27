@@ -1,0 +1,148 @@
+.config-container {
+  min-height: calc(100vh - 70px); /* Desconta a altura do Header fixo automaticamente */
+  background: linear-gradient(135deg, #4ed3e5 0%, #082042 50%, #030a16 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.config-box {
+  background-color: #0b315e; /* Mesmo azul escuro do container de cadastro */
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.config-title {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.config-subtitle {
+  text-align: center;
+  color: #4ed3e5;
+  font-size: 15px;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+.menu-config {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-config {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.item-config:hover {
+  background-color: rgba(78, 211, 229, 0.12);
+  border-color: rgba(78, 211, 229, 0.4);
+  transform: translateX(4px);
+}
+
+.item-config.ativo {
+  background-color: rgba(78, 211, 229, 0.2);
+  border-color: #4ed3e5;
+  box-shadow: 0 0 12px rgba(78, 211, 229, 0.2);
+}
+
+.icone-container-config {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.item-config:hover .icone-container-config {
+  background-color: rgba(78, 211, 229, 0.2);
+}
+
+.icone-config {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Harmoniza deixando os ícones coloridos totalmente brancos */
+}
+
+.texto-config {
+  flex: 1;
+}
+
+.texto-config h2 {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.texto-config p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.seta-indicadora {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.item-config:hover .seta-indicadora {
+  color: #4ed3e5;
+  transform: translateX(2px);
+}
+
+@media (max-width: 600px) {
+  .config-box {
+    padding: 25px 20px;
+  }
+  
+  .item-config {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .icone-config {
+    width: 28px;
+    height: 28px;
+  }
+
+  .texto-config h2 {
+    font-size: 18px;
+  }
+  
+  .texto-config p {
+    font-size: 13px;
+  }
+  
+  .seta-indicadora {
+    display: none;
+  }
+}

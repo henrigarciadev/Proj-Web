@@ -1,0 +1,112 @@
+.header-logado {
+  width: 100%;
+  background: rgba(3, 10, 22, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 12px 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid rgba(78, 211, 229, 0.15);
+}
+
+.hl-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.hl-back-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+.hl-back-btn:hover { opacity: 0.7; }
+
+.hl-titulo {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.hl-center {
+  flex: 1;
+  max-width: 360px;
+}
+
+.hl-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(78, 211, 229, 0.12);
+  border: 1px solid rgba(78, 211, 229, 0.25);
+  border-radius: 24px;
+  padding: 8px 16px;
+  cursor: text;
+}
+
+.hl-search-icon {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+}
+
+.hl-search-placeholder {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  user-select: none;
+}
+
+.hl-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.hl-icon-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.hl-icon-btn:hover { opacity: 0.7; }
+
+.hl-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #082042;
+  border: 2px solid #4ed3e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.hl-avatar-initials {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4ed3e5;
+}
+
+@media (max-width: 600px) {
+  .hl-center { display: none; }
+  .header-logado { padding: 10px 16px; }
+}

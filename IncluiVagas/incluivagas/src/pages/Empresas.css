@@ -1,0 +1,114 @@
+/* Reutiliza o layout base estruturado na Home, adicionando os espaçamentos da lista */
+.empresas-page-content {
+  width: 100%;
+  max-width: 1200px;
+  z-index: 2;
+}
+
+.empresas-section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.empresas-section-title h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+
+/* Bloco do Cabeçalho da Lista (Ícone + Texto) */
+.companies-header-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.company-badge-icon {
+  font-size: 28px;
+  background-color: #0b315e;
+  padding: 10px;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4ed3e5;
+}
+
+.companies-main-subtitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.ficticious-alert-text {
+  font-size: 12px;
+  color: #4ed3e5;
+  margin: 3px 0 0 0;
+  opacity: 0.9;
+}
+
+/* Lista Customizada */
+.companies-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 10px;
+}
+
+.companies-bullet-list li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 6px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.companies-bullet-list li::before {
+  content: "•";
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* Links e Call to Actions inferiores */
+.companies-footer-actions {
+  margin-top: 20px;
+}
+
+.view-more-link {
+  color: #4ed3e5;
+  text-decoration: underline;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.interest-prompt-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.login-instruction-text {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.login-inline-link {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.login-inline-link:hover {
+  color: #4ed3e5;
+}

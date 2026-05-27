@@ -1,0 +1,176 @@
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.curriculo-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4ed3e5 0%, #082042 50%, #030a16 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.curriculo-loading {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.curriculo-card {
+  background-color: #0b315e;
+  width: 100%;
+  max-width: 620px;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  animation: aparecer 0.5s ease;
+  margin: 28px 16px;
+}
+
+/* TOP ROW */
+.curriculo-top-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.curriculo-avatar-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #082042;
+  border: 3px solid #4ed3e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.curriculo-avatar-initials {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4ed3e5;
+}
+
+.curriculo-top-info {
+  flex: 1;
+}
+
+.curriculo-nome {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.curriculo-sub {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.curriculo-btn-editar {
+  background-color: #11b9c8;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.curriculo-btn-editar:hover {
+  background-color: #0ea8b6;
+  transform: translateY(-1px);
+}
+
+.curriculo-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0 20px 0;
+}
+
+/* FIELD GROUPS */
+.curriculo-field-group {
+  margin-bottom: 20px;
+}
+
+.curriculo-field-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #4ed3e5;
+  margin-bottom: 6px;
+}
+
+.curriculo-field-value {
+  display: block;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* TAGS */
+.curriculo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.curriculo-tag {
+  background-color: rgba(78, 211, 229, 0.15);
+  border: 1px solid rgba(78, 211, 229, 0.35);
+  color: #4ed3e5;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.curriculo-tag-empty {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
+/* Sobre mim */
+.curriculo-sobre-texto {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.curriculo-btn-veja-mais {
+  background: none;
+  border: none;
+  color: #4ed3e5;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+}
+.curriculo-btn-veja-mais:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .curriculo-card {
+    padding: 24px 16px;
+    margin: 16px 12px;
+  }
+  .curriculo-top-row {
+    flex-wrap: wrap;
+  }
+  .curriculo-btn-editar {
+    width: 100%;
+    text-align: center;
+  }
+}
